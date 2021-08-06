@@ -9,6 +9,7 @@ void SPAdesPlugin::input(std::string file) {
  while (!ifile.eof()) {
    std::string filename;
    ifile >> filename;
+   if (filename.length() != 0)
    fastqFiles.push_back(filename);
  }
 }
